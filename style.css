@@ -72,6 +72,7 @@ button {
 .right-side {
     background-color: var(--dark-blue);
     border-radius: 10px;
+    max-width: 100%;
     width: 600px;
     height: 200px;
     padding: 40px 40px;
@@ -168,5 +169,27 @@ span {
     .remain-storage {
         top: 30px;
         left: 160px;
+    }
+}
+@media screen and (max-width:900px){
+    body {
+        background-image: url(./images/bg-mobile.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .flex {
+        flex-direction: column;
+    }
+    .left-side {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+    .right-side {
+        width: 90%
+    }
+    .remain-storage {
+        top: 30px;
+        left: 30px;
     }
 }
